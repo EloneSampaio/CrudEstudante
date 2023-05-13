@@ -1,6 +1,7 @@
 # Utilize uma imagem base do PHP com extensões necessárias
 FROM php:8.1-fpm
 
+RUN apt-get update && apt-get install -y nano
 
 # Instale as extensões necessárias e o composer
 RUN apt-get update && apt-get install -y \
